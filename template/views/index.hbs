@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <p>{{>header}} </p>
+    <section class="fdiv">
+        <div class="title-container container py-4 px-3 shadow">
+            <h2 class="title display-4 ">{{mainTitle}}</h2>
+            <p class="sub-title lead">{{subTitle}}</p>
+        </div>
+    </section>
+    <section class="sdiv">
+        <div class="weather-info container">
+            <form class="input-group mb-3 mt-3" id="form1">
+                <input type="text" class="form-control" placeholder="Country Name" aria-label="Country Name" aria-describedby="search" id="address">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="submit" id="search">Search</button>
+                </div>
+            </form>
+
+            <p class="lead" id="location"></p>
+            <p class="lead" id="latitude"></p>
+            <p class="lead" id="longitude"></p>
+            <p class="lead" id="forcast"></p>
+            <p class="lead" id="error"></p>
+            
+        </div> <!-- weather-info -->
+    </section>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
